@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Tatya Vinchu AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Special Elite"', 'cursive'],
+              horror: ['"Creepster"', 'cursive']
+            },
+            colors: {
+              primary: '#dc2626', // Red 600 (Blood)
+              secondary: '#7f1d1d', // Red 900 (Dried Blood)
+              accent: '#ef4444', // Red 500 (Fresh Blood)
+              surface: '#1c1917', // Stone 900
+              dark: '#0c0a09', // Stone 950
+              bubble: '#292524' // Stone 800
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'wiggle': 'wiggle 0.2s ease-in-out infinite',
+              'flicker': 'flicker 3s infinite'
+            },
+            keyframes: {
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-1deg) translateX(1px)' },
+                '50%': { transform: 'rotate(1deg) translateX(-1px)' }
+              },
+              flicker: {
+                '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
+                   opacity: 1,
+                   textShadow: '0 0 10px #dc2626'
+                },
+                '20%, 21.999%, 63%, 63.999%, 65%, 69.999%': {
+                   opacity: 0.4,
+                   textShadow: 'none'
+                }
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        background-image: radial-gradient(circle at center, #1a0505 0%, #000000 100%);
+        color: #e5e7eb;
+        min-height: 100vh;
+      }
+      
+      /* Hide scrollbar for clean look */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #7f1d1d; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #dc2626; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
