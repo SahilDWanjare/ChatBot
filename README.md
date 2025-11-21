@@ -3,7 +3,7 @@
 A fun, horror-themed chatbot application built with **React (TypeScript)** and powered by **Google's Gemini API** for generating chat responses, and **Fal.ai** for text-to-image generation. The bot, styled as the mischievous Indian puppet character Tatya Vinchu, communicates in character and can generate and modify images on command.
 ### (Due to lack of free gemini 2.5 flash image generator API credits this fucntion will not work until its revoked with a paid plan).
 
-## 😂You will definately enjoy using this mischief making chatbot here: https://chat-bot-omega-sage-62.vercel.app/
+## 😂You will definately enjoy using this mischief making chatbot here: https://chat-bot-gamma-weld.vercel.app/
 <div align="center">
   <img 
     width="438" 
